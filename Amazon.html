@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ .search{ 
+        padding-right:200px;
+        display:flex;
+        flex: 1;
+    }
+    .header{
+display:flex;
+flex-direction: row;
+position:fixed;
+top:0;
+height:80px;
+background-color:black;
+justify-content: space-between;
+width:100%;
+flex:1;
+align-items: center;
+    }
+    p {
+        font-family: Roboto, Arial;
+       display:flex;
+    }
+    .left-section{
+        display:flex;
+        margin-left:30px;
+        max-width: 200px;
+       
+        }
+    .middle-section{
+        display:flex;
+        max-width: 300px;
+        flex:1;
+      
+        
+      }
+.cart-icon{
+height:30px;
+
+
+}
+.right-section { 
+display: flex;
+width: 200px;
+margin-left:70px;
+align-items: center;
+margin-right:0;
+}
+.label-3{
+    position:relative;
+}
+.product-section{
+   display: flex;
+   flex: auto;
+   flex-shrink: 4px;
+   
+   }
+.all-preview{
+display: grid;
+ grid-template-columns:4 1fr;
+vertical-align: top;
+border-color:rgb(197, 194, 194);
+border-width: 1px;
+border-style: solid;
+width:300px;
+margin-right:0;
+}
+.Socks{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+width:150px;
+margin-top:100px;
+margin-left:40px;
+}
+.rating{
+width:100px;
+}
+.rating-87{
+display: inline-flex;
+align-items: first baseline;
+margin-top:-20px;
+}
+.r87{
+display:grid;
+margin-left:10px;
+font-size:18px;
+color:rgb(107, 107, 202);
+}
+.select-button{
+width:40px;
+margin-left: 20px;
+margin-bottom:200px;
+}
+.socks-text{
+margin-left:20px;
+
+
+}
+.add-to-cart{
+width:200px;
+margin-left:20px;
+padding:5px;
+border-radius:20px;
+background-color: rgb(255, 234, 0);
+border-width: 0;
+margin-bottom: 10px;
+}
+</style>
+</head>
+
+<body style="padding-bottom:3000px;">
+<header class="header">
+<div class="left-section">
+<img style="
+    background-color: black;
+    width:100px; display:flex;
+    flex-shrink: 0;" src="Amazon carts/amazon-logo-white.png">
+</div>
+<div class="middle-section">
+<input class="search" type="text" placeholder="Search">
+<button>
+<img src="Amazon carts/search-icon.png">
+</button>
+</div>
+<div class="right-section">
+<p  style="color:white;;">Returns<br> & Orders</p>
+<div class="label-3">
+    <img class="cart-icon" src="Amazon carts/cart-icon.png" >
+    <label type="label" id="myLabel" style="color:rgb(185, 32, 32);
+    position: absolute;
+    left:20px; font-weight: bolder;">3</label>
+</div>
+    <p style="color:white;margin-top:30px;">carts</p>
+</div>
+</header>
+<section class="product-section">
+<div class="all-preview">
+<div class="socks-text">
+<img class="Socks" src="Amazon carts/athletic-cotton-socks-6-pairs.jpg"><br>
+<p>Black and Gray Athletic Cotton Socks - 6 Pairs</p>
+<div class="rating-87">
+<img class="rating" src="Amazon carts/rating-45 (1).png"> 
+<p class="r87">87</p>
+</div>
+</div>
+<select type="text" id="myText" class="select-button">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+
+</select>
+<button id="myButton" class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="all-preview">
+<div class="socks-text">
+<img style="
+margin-top:140px;" class="Socks" src="Amazon carts/intermediate-composite-basketball.jpg"><br>
+<p>Intermediate Size Basketball</p>
+<div class="rating-87">
+<img class="rating" src="Amazon carts/rating-45.png"> 
+<p class="r87">127</p>
+</div>
+</div>
+
+<select type="text" id="myText" class="select-button">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+</select>
+<button id="myButton"  class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="all-preview">
+<div class="socks-text">
+<img class="Socks" src="Amazon carts/adults-plain-cotton-tshirt-2-pack-teal.jpg"><br>
+<p>Adults Plain Cotton T-Shirt - 2 Pack</p>
+<div class="rating-87">
+<img class="rating" src="Amazon carts/rating-45 (1).png"> 
+<p class="r87">87</p>
+</div>
+</div>
+<select type="text" id="myText" class="select-button">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+
+</select>
+<button id="myButton"  class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="all-preview">
+<div class="socks-text">
+<img class="Socks" src="Amazon carts/black-2-slot-toaster.jpg"><br>
+<p>2 Slot Toaster - Black</p>
+<div class="rating-87">
+<img class="rating" src="Amazon carts/rating-45.png"> 
+<p class="r87">127</p>
+</div>
+</div>
+
+<select type="text" id="myText" class="select-button">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+</select>
+<button id="myButton"  class="add-to-cart">Add to Cart</button>
+</div>
+
+
+<div class="all-preview">
+    <div class="socks-text">
+    <img style="
+    margin-top:205px;"  class="Socks" src="Amazon carts/6-piece-white-dinner-plate-set.jpg"><br>
+    <p>6 Piece White Dinner Plate Set</p>
+    <div class="rating-87">
+    <img class="rating" src="Amazon carts/rating-45 (1).png"> 
+    <p class="r87">87</p>
+    </div>
+    </div>
+    <select type="text" id="myText" class="select-button">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+    <option>7</option>
+    <option>8</option>
+    <option>9</option>
+
+    </select>
+    <button id="myButton"  class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="all-preview">
+    <div style="
+    margin-top:40px;" class="socks-text">
+    <img class="Socks" src="Amazon carts/6-piece-non-stick-baking-set.webp"><br>
+    <p>6-Piece Nonstick, Carbon Steel Oven Bakeware Baking Set</p>
+    <div class="rating-87">
+    <img class="rating" src="Amazon carts/rating-45.png"> 
+    <p class="r87">127</p>
+    </div>
+    </div>
+
+    <select type="text" id="myText" class="select-button">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+    <option>7</option>
+    <option>8</option>
+    <option>9</option>
+    </select>
+    <button id="myButton" class="add-to-cart">Add to Cart</button>
+    </div>
+
+</section>
+
+
+<script>
+let username;
+document.getElementById("myButton").onclick = function(){
+username = document.getElementById("myText").value;
+console.log(username);
+document.getElementById("myLabel").innerHTML = username;
+}
+
+//let username;
+document.getElementById("myButton").onclick = function(){
+username = document.getElementById("myText").value;
+console.log(username);
+document.getElementById("myLabel").innerHTML = username;
+}
+
+</script>
+
+</body>
+</html>
